@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Beauty Blog - Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to the Beauty Blog</h1>
+            <p>Your go-to resource for teenage lifestyle and beauty tips.</p>
+            <button id="scrollToFeatured">Explore Featured Articles</button>
+        </section>
+        <section id="featured" class="featured">
+            <h2>Featured Articles</h2>
+            <div class="articles">
+                <article>
+                    <img src="images/skincare.jpg" alt="Skincare Tips">
+                    <h3>Top 5 Skincare Tips</h3>
+                    <p>Learn how to take care of your skin naturally.</p>
+                    <a href="blog.html?article=skincare">Read More</a>
+                </article>
+                <article>
+                    <img src="images/fashion.jpg" alt="Teen Fashion Trends">
+                    <h3>Teen Fashion Trends 2025</h3>
+                    <p>Discover the latest trends in teenage fashion.</p>
+                    <a href="blog.html?article=fashion">Read More</a>
+                </article>
+                <article>
+                    <img src="images/makeup.jpg" alt="Makeup Tips">
+                    <h3>10 Makeup Tips for Teens</h3>
+                    <p>Master the art of makeup with these simple tips.</p>
+                    <a href="blog.html?article=makeup">Read More</a>
+                </article>
+                <article>
+                    <img src="images/haircare.jpg" alt="Haircare Tips">
+                    <h3>Essential Haircare Tips</h3>
+                    <p>Keep your hair healthy and shiny with these tips.</p>
+                    <a href="blog.html?article=haircare">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Beauty Blog</p>
+    </footer>
+    <script>
+        // Smooth scrolling for the "Explore Featured Articles" button
+        document.getElementById('scrollToFeatured').addEventListener('click', () => {
+            document.getElementById('featured').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
